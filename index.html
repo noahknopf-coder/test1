@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Picking Joy</title>
+  <meta name="description" content="A vibrant, free-to-host website celebrating the pleasures of apple picking." />
+  <style>
+    :root {
+      --apple: #c0392b;
+      --leaf: #2f6f3f;
+      --sun: #f7c74a;
+      --cream: #fff9f0;
+      --ink: #2a2220;
+      --muted: #6a5750;
+      --card: rgba(255, 255, 255, 0.88);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+
+    body {
+      font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 10%, #ffe4cf 0, #ffe4cf 20%, transparent 55%),
+        radial-gradient(circle at 90% 0%, #fff1bf 0, #fff1bf 16%, transparent 46%),
+        linear-gradient(180deg, #fff6eb 0%, #fffef9 45%, #edf7e9 100%);
+      line-height: 1.65;
+    }
+
+    .container {
+      width: min(1080px, 92vw);
+      margin-inline: auto;
+    }
+
+    .hero {
+      padding: 4rem 0 2.5rem;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fff;
+      border: 1px solid rgba(192, 57, 43, 0.25);
+      color: var(--apple);
+      border-radius: 999px;
+      padding: 0.35rem 0.8rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.7rem);
+      line-height: 1.08;
+      margin: 0;
+      color: var(--apple);
+    }
+
+    .lead {
+      max-width: 50rem;
+      margin: 1rem auto 0;
+      font-size: clamp(1rem, 2.2vw, 1.22rem);
+      color: var(--muted);
+    }
+
+    .cta-row {
+      margin-top: 1.3rem;
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      background: var(--cream);
+      border: 1px solid rgba(47, 111, 63, 0.25);
+      color: var(--leaf);
+      border-radius: 999px;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(47, 111, 63, 0.18);
+      border-radius: 18px;
+      padding: 1.15rem;
+      box-shadow: 0 10px 24px rgba(44, 34, 30, 0.08);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 0.35rem;
+      color: var(--leaf);
+      font-size: 1.2rem;
+    }
+
+    ul {
+      margin: 0.45rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    .quote {
+      margin: 2rem auto;
+      max-width: 48rem;
+      text-align: center;
+      background: #fffef9;
+      border-left: 8px solid var(--sun);
+      padding: 1.1rem 1.25rem;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    .deploy {
+      background: #fff;
+      border: 1px dashed rgba(192, 57, 43, 0.35);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      color: #513f39;
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.92rem;
+      color: #5e4f49;
+      padding: 1rem 0 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero container">
+    <p class="badge">🍎 100% static • zero-cost hosting friendly</p>
+    <h1>The Pleasures of Apple Picking</h1>
+    <p class="lead">
+      Apple picking is autumn happiness in its purest form: cool air, sunlit orchards, a basket filling up,
+      and that little <em>snap</em> when a ripe apple leaves the branch.
+    </p>
+    <div class="cta-row" aria-label="apple day highlights">
+      <span class="pill">Crisp orchard mornings</span>
+      <span class="pill">Family-friendly day trips</span>
+      <span class="pill">Fresh pies + cider after</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid" aria-label="apple picking sections">
+      <article class="card">
+        <h2>Why It Feels So Good</h2>
+        <ul>
+          <li>Nature slows you down and resets your mind.</li>
+          <li>Every tree is a mini adventure to explore.</li>
+          <li>You take home food that actually means something.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Orchard Day Checklist</h2>
+        <ul>
+          <li>Wear layers and comfy shoes with grip.</li>
+          <li>Bring a tote, water bottle, and napkins.</li>
+          <li>Twist gently upward so stems stay intact.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Best Ways to Use Your Haul</h2>
+        <ul>
+          <li>Warm cinnamon apples for oatmeal.</li>
+          <li>Classic pie or simple sheet-pan crisp.</li>
+          <li>Fresh slices with cheddar and hot tea.</li>
+        </ul>
+      </article>
+    </section>
+
+    <p class="quote">
+      “A perfect apple-picking day ends with rosy cheeks, sticky fingers, and a kitchen that smells like cinnamon.” 🌳
+    </p>
+
+    <section class="deploy">
+      <strong>Free deployment tip:</strong> this page has no backend and no paid services. Push it to GitHub and enable
+      GitHub Pages to get a public URL at no cost.
+    </section>
+  </main>
+
+  <footer class="container">
+    Built as a lightweight static site — easy to host forever on free tiers.
+  </footer>
+</body>
+</html>
